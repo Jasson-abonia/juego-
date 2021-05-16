@@ -37,13 +37,21 @@ if (human==3){
 }
 
 while (human>=4) {
-  /*alert("ingresar volors entre 1 y 3")*/
-  console.log(human)
+  //alert("ingresar volors entre 1 y 3")
   human = parseInt(prompt("Por favor seleccione una opcion: \n 1.Piedra \n 2.Papel \n 3.Tijera"))
   
+  if (human==1){
+    movhuman= "Piedra"
+  }
+  
+  if (human==2){
+    movhuman= "Papel"
+  }
+  
+  if (human==3){
+    movhuman= "Tijera"
+  }
 }
-
-movhuman = human;
 
 document.write("El PC saca: "+movpc + "<br>");
 document.write("El Humano saca: "+movhuman + "<br>");
